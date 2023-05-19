@@ -165,13 +165,13 @@ html
 }
 
 #header .mobile-menu-btn,
-#header .search-btn
+#header .signout-btn
 {
     float: right;
     padding: 0 21px;
 }
 
-#header .search-btn:hover
+#header .signout-btn:hover
 {
     background-color: #f44336;
     cursor: pointer;
@@ -190,7 +190,7 @@ html
 }
 
 #header .menu-icon,
-#header .search-icon
+#header .signout-icon
 {
     color: white;
     font-size: 20px;
