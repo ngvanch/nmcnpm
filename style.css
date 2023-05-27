@@ -156,6 +156,11 @@ html
     font-size: 12px;
 }
 
+#nav li a.subnav-padding
+{
+    padding: 0;
+}
+
 #header .mobile-menu-btn
 {
     display: none;
