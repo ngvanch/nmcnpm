@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Báo cáo tổng kết môn</title>
+    <link rel="stylesheet" type="text/css" href="classreport.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Báo cáo tổng kết môn</h1>
+        <form>
+            <div class="form-group">
+                <label for="semester">Học kì:</label>
+                <input type="text" id="semester" name="semester" placeholder="Nhập học kì...">
+            </div>
+            <div class="form-group">
+                <label for="subject">Môn học:</label>
+                <input type="text" id="subject" name="subject" placeholder="Nhập môn học...">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Hiển thị">
+            </div>
+        </form>
+        
+        <h2>Kết quả:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Số thứ tự</th>
+                    <th>Lớp</th>
+                    <th>Sĩ số</th>
+                    <th>Số lượng đạt</th>
+                    <th>Tỉ lệ học sinh đạt (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>12A</td>
+                    <td>30</td>
+                    <td>25</td>
+                    <td>83.33%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>11B</td>
+                    <td>28</td>
+                    <td>20</td>
+                    <td>71.43%</td>
+                </tr>
+                <!-- Thêm các hàng khác tương tự cho các lớp khác -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
