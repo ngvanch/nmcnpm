@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tra cứu học sinh</title>
+  <link rel="stylesheet" type="text/css" href="search.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tra cứu học sinh</h1>
+    <form id="search-form">
+      <label for="class-input">Lớp:</label>
+      <input type="text" id="class-input" placeholder="Nhập tên lớp">
+      <label for="student-name-input">Tên học sinh:</label>
+      <input type="text" id="student-name-input" placeholder="Nhập tên học sinh">
+      <button type="submit">Tra cứu</button>
+    </form>
+
+    <h2>Kết quả tra cứu:</h2>
+    <table id="search-results-table">
+      <thead>
+        <tr>
+          <th>Số thứ tự</th>
+          <th>Tên học sinh</th>
+          <th>Điểm HK1</th>
+          <th>Điểm HK2</th>
+        </tr>
+      </thead>
+      <tbody id="search-results-body"></tbody>
+    </table>
+  </div>
+
+  <script src="search.js"></script>
+</body>
+</html>
