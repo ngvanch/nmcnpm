@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quản lý học sinh</title>
+  <link rel="stylesheet" type="text/css" href="classlist.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Quản lý học sinh</h1>
+    <form id="class-form">
+      <label for="class-input">Nhập lớp:</label>
+      <input type="text" id="class-input" placeholder="Nhập tên lớp">
+      <button type="submit">Lập danh sách</button>
+    </form>
+
+    <h2>Sĩ số lớp:</h2>
+    <table id="class-size-table">
+      <thead>
+        <tr>
+          <th>Lớp</th>
+          <th>Sĩ số</th>
+        </tr>
+      </thead>
+      <tbody id="class-size-body"></tbody>
+    </table>
+
+    <h2>Danh sách lớp:</h2>
+    <table id="student-list-table">
+      <thead>
+        <tr>
+          <th>Số thứ tự</th>
+          <th>Tên học sinh</th>
+          <th>Giới tính</th>
+          <th>Năm sinh</th>
+          <th>Địa chỉ</th>
+        </tr>
+      </thead>
+      <tbody id="student-list-body"></tbody>
+    </table>
+  </div>
+
+  <script src="classlist.js"></script>
+</body>
+</html>
