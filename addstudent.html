@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quản lý học sinh</title>
+  <link rel="stylesheet" type="text/css" href="addstudent.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Quản lý học sinh</h1>
+    <button id="add-student-btn" class="action-btn">Thêm học sinh</button>
+    <button id="delete-student-btn" class="action-btn">Xóa học sinh</button>
+    <button id="edit-student-btn" class="action-btn">Sửa thông tin học sinh</button>
+    <div id="add-student-form" class="hidden">
+      <h2>Thêm học sinh</h2>
+      <form id="student-form">
+        <label for="class-input">Lớp:</label>
+        <input type="text" id="class-input" required>
+        <label for="name-input">Tên học sinh:</label>
+        <input type="text" id="name-input" required>
+        <label for="gender-input">Giới tính:</label>
+        <select id="gender-input" required>
+          <option value="Nam">Nam</option>
+          <option value="Nữ">Nữ</option>
+        </select>
+        <label for="dob-input">Ngày sinh:</label>
+        <input type="date" id="dob-input" required>
+        <label for="address-input">Địa chỉ:</label>
+        <input type="text" id="address-input" required>
+        <label for="email-input">Email:</label>
+        <input type="email" id="email-input" required>
+        <button type="submit">Thêm</button>
+      </form>
+    </div>
+    <div id="delete-student-form" class="hidden">
+      <h2>Xóa học sinh</h2>
+      <form id="delete-form">
+        <label for="delete-name-input">Tên học sinh:</label>
+        <input type="text" id="delete-name-input" required>
+        <label for="delete-class-input">Lớp:</label>
+        <input type="text" id="delete-class-input" required>
+        <button type="submit">Xóa</button>
+      </form>
+    </div>
+    <div id="edit-student-form" class="hidden">
+      <h2>Sửa thông tin học sinh</h2>
+      <form id="edit-form">
+        <label for="edit-name-input">Tên học sinh:</label>
+        <input type="text" id="edit-name-input" required>
+        <label for="edit-class-input">Lớp:</label>
+        <input type="text" id="edit-class-input" required>
+        <label for="edit-gender-input">Giới tính:</label>
+        <select id="edit-gender-input" required>
+          <option value="Nam">Nam</option>
+          <option value="Nữ">Nữ</option>
+        </select>
+        <label for="edit-dob-input">Ngày sinh:</label>
+        <input type="date" id="edit-dob-input" required>
+        <label for="edit-address-input">Địa chỉ:</label>
+        <input type="text" id="edit-address-input" required>
+        <label for="edit-email-input">Email:</label>
+        <input type="email" id="edit-email-input" required>
+        <button type="submit">Sửa</button>
+      </form>
+    </div>
+    <table id="student-table">
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>Lớp</th>
+          <th>Tên học sinh</th>
+          <th>Giới tính</th>
+          <th>Ngày sinh</th>
+          <th>Địa chỉ</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody id="student-list">
+        <!-- Dữ liệu học sinh sẽ được thêm vào đây bằng JavaScript -->
+      </tbody>
+    </table>
+  </div>
+  <script src="addstudent.js"></script>
+</body>
+</html>
