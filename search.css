@@ -1,42 +1,248 @@
-.container {
-    width: 66%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-  }
-  
-  h1, h2 {
-    text-align: center;
-  }
-  
-  form label {
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.text-white
+{
+    color: white !important;
+}
+
+.row
+{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after
+{
+    content: "";
     display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-  }
-  
-  form input[type="text"],
-  form button[type="submit"] {
+    clear: both;
+}
+
+.col
+{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half
+{
+    width: 50%;
+}
+
+.col-full
+{
     width: 100%;
-    padding: 6px 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-  }
-  
+}
+
+.mt-8
+{
+    margin-top: 8px !important;
+}
+
+.mt-16
+{
+    margin-top: 16px !important;
+}
+
+#main
+{
+
+}
+
+#header
+{
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav
+{
+    display: inline-block;
+}
+
+#nav, .subnav
+{
+    list-style-type: none;
+}
+
+#nav > li
+{
+    display: inline-block;
+}
+
+#nav li
+{
+    position: relative;
+}
+
+#nav > li:hover .subnav
+{
+    display: block;
+}
+
+#nav > li > a
+{
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav li a
+{
+    color: #ccc;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+#nav > li:hover > a 
+{
+    color: black;
+    background-color: #ccc;
+}
+
+#nav .subnav
+{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav li
+{
+    padding: 16px 16px;
+    line-height: 38px;
+}
+
+#nav .subnav a
+{
+    line-height: 46px;
+    color: #000;
+}
+
+#nav .subnav li:hover
+{
+    background-color: #ccc;
+}
+
+#nav .nav-arrow-down
+{
+    font-size: 12px;
+}
+
+#nav li a.subnav-padding
+{
+    padding: 0;
+}
+
+#header .mobile-menu-btn
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#header .mobile-menu-btn,
+#header .signout-btn
+{
+    float: right;
+    padding: 0 21px;
+}
+
+#header .signout-btn:hover
+{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .mobile-menu-btn:hover
+{
+    background-color: #bbb;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#header .mobile-menu-btn i:hover
+{
+    color: #000;
+}
+
+#header .menu-icon,
+#header .signout-icon
+{
+    color: white;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#search {
+  position: relative;
+  margin-top: 46px;
+  padding-top: 50%;
+  width: 66%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form button[type="submit"] {
+  width: 100%;
+  padding: 6px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
